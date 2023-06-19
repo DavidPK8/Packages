@@ -6,6 +6,9 @@ public class MenuPrincipal {
         Scanner sc = new Scanner(System.in);
         int menu;
         circunferencia_grupo2 circunferencia = new circunferencia_grupo2(25, 60);
+        Elipse elipse = new Elipse(24.15, 12.67);
+        hiperbole hiperbole = new hiperbole(8, 24);
+        Parabola_Equipo2 parabola = new Parabola_Equipo2(0, 0, 45, 23, 73);
 
         do{
             System.out.println("\n*** MENU ***");
@@ -26,12 +29,23 @@ public class MenuPrincipal {
                     break;
                 }
                 case 2:{
+                    System.out.println("\n*** ELIPSE ***");
+                    System.out.println("\nPerimetro: " + elipse.perimetro_elipse());
+                    System.out.println("Area: " + elipse.area_elipse());
                     break;
                 }
                 case 3:{
+                    System.out.println("\n*** HIPERBOLE ***");
+                    System.out.println();
+                    hiperbole.variables();
                     break;
                 }
                 case 4:{
+                    System.out.println("\n*** PARABOLA ***");
+                    parabola.Parabola_Equipo2_VerticeX(45, 23);
+                    parabola.Parabola_Equipo2_VerticeY(45, 23, 73);
+                    System.out.println();
+                    parabola.Parabola_Equipo2_ImpVer();
                     break;
                 }
                 case 5:{
